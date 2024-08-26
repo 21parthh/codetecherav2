@@ -5,6 +5,7 @@ import Button from "./ui/Button";
 import { FaLocationArrow } from "react-icons/fa";
 import { FlipWords } from "./ui/FlipWords";
 import { HoverEffect } from "./ui/ServicesCard";
+import { GlobeDemo } from "./Glob";
 
 const Hero = () => {
 	const words = ["better", "flexible", "beautiful", "modern"];
@@ -95,6 +96,7 @@ const Hero = () => {
 				<div className="max-w-5xl mx-auto px-8">
 					<HoverEffect items={projects} />
 				</div>
+				<GlobeDemo />
 			</div>
 		</>
 	);
