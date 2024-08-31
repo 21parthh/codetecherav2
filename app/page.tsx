@@ -1,8 +1,15 @@
+import { LayoutGridDemo } from "@/components/LayooutGrid";
 import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/Navbar";
 import { link } from "fs";
 import Image from "next/image";
 import { FaHome } from "react-icons/fa";
+import { StickyScroll } from "@/components/ui/StickyScroll";
+import { StickyScrollRevealDemo } from "@/components/Scroll";
+import { InfiniteMovingCards } from "@/components/ui/feedback";
+import { InfiniteMovingCardsDemo } from "@/components/feedback";
+import Footer from "@/components/footer";
+import { BackgroundBeamsDemo } from "@/components/waitlist";
 
 export default function Home() {
 	return (
@@ -15,9 +22,19 @@ export default function Home() {
 							link: "/",
 							icon: <FaHome />,
 						},
+						{
+							name: "Courses",
+							link: "/courses",
+							icon: <FaHome />,
+						},
 					]}
 				/>
 				<Hero />
+				<LayoutGridDemo />
+				<StickyScrollRevealDemo />
+				<InfiniteMovingCardsDemo />
+				<BackgroundBeamsDemo />
+				<Footer />
 			</div>
 		</main>
 	);
