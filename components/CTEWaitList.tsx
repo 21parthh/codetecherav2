@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import { BackgroundBeams } from "../components/ui/waitlist";
+import { BackgroundBeams } from "./ui/waitlist";
 
-export function BackgroundBeamsDemo() {
+export function CTEWaitList() {
 	return (
 		<div className="h-[40rem] w-full rounded-md bg-black-100 relative flex flex-col items-center justify-center antialiased">
 			<div className="max-w-2xl mx-auto p-4">
@@ -16,8 +16,8 @@ export function BackgroundBeamsDemo() {
 				</p>
 				<input
 					type="text"
-					placeholder="hi@manuarora.in"
-					className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500  w-full relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700"
+					placeholder="hi@codetechera.in"
+					className="rounded-lg border p-2 border-neutral-800 focus:ring-2 focus:ring-teal-500  w-full relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700"
 				/>
 			</div>
 			<BackgroundBeams />
