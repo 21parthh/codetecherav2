@@ -1,7 +1,7 @@
 // import { TabsDemo } from "@/components/courses/Preview";
 import { ExpandableCardDemo } from "@/components/courses/Preview";
 import { CoverDemo } from "@/components/courses/Tagline";
-import Hero from "@/components/Hero";
+import Hero from "@/components/CTEHero";
 import React from "react";
 
 const Hello = () => {

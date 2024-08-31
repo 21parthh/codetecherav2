@@ -3,14 +3,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 
-const World = dynamic(
-	() => import("../components/ui/Glob").then((m) => m.World),
-	{
-		ssr: false,
-	}
-);
+const World = dynamic(() => import("./ui/Glob").then((m) => m.World), {
+	ssr: false,
+});
 
-export function GlobeDemo() {
+export function CTEGlob() {
 	const globeConfig = {
 		pointSize: 4,
 		globeColor: "#062056",
@@ -479,7 +476,7 @@ export function GlobeDemo() {
 
 	return (
 		<div className="flex flex-row items-center justify-center py-20 h-screen md:h-auto dark:bg-black-100 bg-white relative w-full">
-			<div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
+			<div className="max-w-7xl mx-auto w-full relative overflow-hidden h-[30rem] px-4">
 				<motion.div
 					initial={{
 						opacity: 0,
@@ -494,16 +491,17 @@ export function GlobeDemo() {
 					}}
 					className="div"
 				>
-					<h2 className="text-center text-xl md:text-4xl font-bold text-black dark:text-white">
+					<div className="text-center text-4xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
 						We deliver worldwide
-					</h2>
-					<p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
+					</div>
+					<p className="text-center  text-neutral-400">
+						{" "}
 						CodeTechEra is committed to supporting all
-						time zones, providing seamless service for
-						clients worldwide.
+						time zones, <br /> providing seamless
+						service for clients worldwide.
 					</p>
 				</motion.div>
-				<div className="absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black-100 to-white z-40" />
+				<div className=" absolute w-full bottom-0 inset-x-0 h-40 bg-gradient-to-b pointer-events-none select-none from-transparent dark:to-black-100 to-white z-40" />
 				<div className="absolute w-full -bottom-20 h-72 md:h-full z-10">
 					<World
 						data={sampleArcs}

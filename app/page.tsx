@@ -1,15 +1,17 @@
-import { LayoutGridDemo } from "@/components/LayooutGrid";
-import Hero from "@/components/Hero";
+import { CTEGallery } from "@/components/CTEGallery";
+import Hero from "@/components/CTEHero";
 import { FloatingNav } from "@/components/ui/Navbar";
 import { link } from "fs";
 import Image from "next/image";
 import { FaHome } from "react-icons/fa";
 import { StickyScroll } from "@/components/ui/StickyScroll";
-import { StickyScrollRevealDemo } from "@/components/Scroll";
 import { InfiniteMovingCards } from "@/components/ui/feedback";
-import { InfiniteMovingCardsDemo } from "@/components/feedback";
-import Footer from "@/components/footer";
-import { BackgroundBeamsDemo } from "@/components/waitlist";
+import { CTEFeedback } from "@/components/CTEFeedback";
+import CTEServices from "@/components/CTEServices";
+import { CTEGlob } from "@/components/CTEGlob";
+import { CTEFeatures } from "@/components/CTEFeatures";
+import CTEFooter from "@/components/CTEFooter";
+import { CTEWaitList } from "@/components/CTEWaitList";
 
 export default function Home() {
 	return (
@@ -30,11 +32,13 @@ export default function Home() {
 					]}
 				/>
 				<Hero />
-				<LayoutGridDemo />
-				<StickyScrollRevealDemo />
-				<InfiniteMovingCardsDemo />
-				<BackgroundBeamsDemo />
-				<Footer />
+				<CTEServices />
+				<CTEGlob />
+				<CTEGallery />
+				<CTEFeatures />
+				<CTEFeedback />
+				<CTEWaitList />
+				<CTEFooter />
 			</div>
 		</main>
 	);

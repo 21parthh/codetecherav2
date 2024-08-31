@@ -56,7 +56,7 @@ export const HoverEffect = ({
 						)}
 					</AnimatePresence>
 					<Card>
-						<CardTitle className="flex justify-center text-justify ">
+						<CardTitle className="flex justify-center  text-center ">
 							{item.title}
 						</CardTitle>
 						<CardDescription className="flex justify-center text-justify ">
